@@ -19,17 +19,26 @@ const DisplayPositive = ({ good, all }) => {
 }
 
 const Statistics = ({ good, neutral, bad }) => {
-  return (
-    <>
-      <h1>statistics</h1>
-      <p>good {good}</p>
-      <p>neutral {neutral}</p>
-      <p>bad {bad}</p>
-      <p>all {good + neutral + bad}</p>
-      <DisplayAverage average={good - bad} all={good + neutral + bad} />
-      <DisplayPositive good={good} all={good + neutral + bad} />
-    </>
-  )
+  if (good === 0 && neutral === 0 && bad === 0) {
+    return (
+      <>
+        <h1>statistics</h1>
+        <p>No feedback given</p>
+      </>
+    )
+  } else {
+    return (
+      <>
+        <h1>statistics</h1>
+        <p>good {good}</p>
+        <p>neutral {neutral}</p>
+        <p>bad {bad}</p>
+        <p>all {good + neutral + bad}</p>
+        <DisplayAverage average={good - bad} all={good + neutral + bad} />
+        <DisplayPositive good={good} all={good + neutral + bad} />
+      </>
+    )
+  }
 }
 
 const App = () => {

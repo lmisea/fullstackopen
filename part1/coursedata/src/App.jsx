@@ -28,10 +28,17 @@ const App = () => {
     setRight(right + 1)
   }
 
+  const handleResetClick = () => {
+    setAll([])
+    setLeft(0)
+    setRight(0)
+  }
+
   return (
     <div>
       {left}
       <Button handleClick={handleLeftClick} text="left" />
+      <Button handleClick={handleResetClick} text="reset" />
       <Button handleClick={handleRightClick} text="right" />
       {right}
       <History allClicks={allClicks} />

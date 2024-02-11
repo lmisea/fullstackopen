@@ -1,13 +1,19 @@
-# Part2
+# Part 2 - Communicating with server
 
-Directory for part1 of the fullstackopen course.
+## Progress
+
+- [x] a - [Rendering a collection, modules](https://fullstackopen.com/en/part2/rendering_a_collection_modules)
+- [x] b - [Forms](https://fullstackopen.com/en/part2/forms)
+- [ ] c - [Getting data from server](https://fullstackopen.com/en/part2/getting_data_from_server)
+- [ ] d - [Altering data in server](https://fullstackopen.com/en/part2/altering_data_in_server)
+- [ ] e - [Adding styles to React app](https://fullstackopen.com/en/part2/adding_styles_to_react_app)
 
 ## Exercises
 
-- [x] 2.1 - 2.5: courseinfo (second version)
+- [x] 2.1 - 2.5: [courseinfo](./courseinfo/)
+- [ ] 2.6 - 2.10: [phonebook](./phonebook/)
 
-### Additional notes
+## Course material
 
-The **coursedata** directory contains all the example code given in the course material. It is not part of the exercises.
-
-The **fun-prog** directory contains some examples from the Functional programming in JavaScript YouTube video series by MPJ on Fun Fun Functions. It is not part of the exercises.
+- [coursedata](./coursedata/): Notes single page application given in the course material.
+- [fun-prog](./fun-prog/): Examples from the _Functional programming in JavaScript_ YouTube video series by MPJ on Fun Fun Functions.

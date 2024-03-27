@@ -1,8 +1,8 @@
-import axios from 'axios'
 import { useEffect, useState } from 'react'
 import Filter from './components/Filter'
 import PersonForm from './components/PersonForm'
 import Persons from './components/Persons'
+import personService from './services/persons'
 
 const App = () => {
   const [persons, setPersons] = useState([])
@@ -12,11 +12,9 @@ const App = () => {
   const [personsToShow, setPersonsToShow] = useState(persons)
 
   useEffect(() => {
-    console.log('effect')
-    axios.get('http://localhost:3001/persons').then((response) => {
-      console.log('promise fulfilled')
-      setPersons(response.data)
-      setPersonsToShow(response.data)
+    personService.getAll().then((initialPersons) => {
+      setPersons(initialPersons)
+      setPersonsToShow(initialPersons)
     })
   }, []) // The empty array as the second argument ensures that the effect is executed only the first time the component is rendered.
   console.log('render', persons.length, 'persons')
@@ -31,11 +29,14 @@ const App = () => {
     const personObject = {
       name: newName,
       number: newNumber,
-      id: persons.length + 1,
     }
 
-    setPersons(persons.concat(personObject))
-    setPersonsToShow(persons.concat(personObject))
+    personService.create(personObject).then((returnedPerson) => {
+      personObject.id = returnedPerson.id
+      setPersons(persons.concat(returnedPerson))
+      setPersonsToShow(persons.concat(returnedPerson))
+    })
+
     setNewFilter('')
     setNewName('')
     setNewNumber('')

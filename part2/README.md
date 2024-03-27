@@ -5,13 +5,13 @@
 - [x] a - [Rendering a collection, modules](https://fullstackopen.com/en/part2/rendering_a_collection_modules)
 - [x] b - [Forms](https://fullstackopen.com/en/part2/forms)
 - [x] c - [Getting data from server](https://fullstackopen.com/en/part2/getting_data_from_server)
-- [ ] d - [Altering data in server](https://fullstackopen.com/en/part2/altering_data_in_server)
+- [x] d - [Altering data in server](https://fullstackopen.com/en/part2/altering_data_in_server)
 - [ ] e - [Adding styles to React app](https://fullstackopen.com/en/part2/adding_styles_to_react_app)
 
 ## Exercises
 
 - [x] 2.1 - 2.5: [courseinfo](./courseinfo/)
-- [x] 2.6 - 2.14: [phonebook](./phonebook/)
+- [x] 2.6 - 2.15: [phonebook](./phonebook/)
 
 ## Course material
 

@@ -12,6 +12,7 @@
 
 - [x] 2.1 - 2.5: [courseinfo](./courseinfo/)
 - [x] 2.6 - 2.17: [phonebook](./phonebook/)
+- [ ] 2.18 - 2.20: [countries](./countries/)
 
 ## Course material
 

@@ -11,7 +11,7 @@
 ## Exercises
 
 - [x] 2.1 - 2.5: [courseinfo](./courseinfo/)
-- [x] 2.6 - 2.16: [phonebook](./phonebook/)
+- [x] 2.6 - 2.17: [phonebook](./phonebook/)
 
 ## Course material
 

@@ -32,7 +32,7 @@ function App() {
         setSearchValue={setSearchValue}
         lookForCountries={lookForCountries}
       />
-      <Countries countries={countries} />
+      <Countries countries={countries} setCountries={setCountries} />
     </>
   )
 }

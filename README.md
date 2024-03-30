@@ -11,7 +11,7 @@ Notes, examples and exercises from the first seven parts of the [Full Stack open
 
 - [x] [Part 0 - Fundamentals of Web apps](./part0)
 - [x] [Part 1 - Introduction to React](./part1)
-- [ ] [Part 2 - Communicating with server](./part2)
+- [x] [Part 2 - Communicating with server](./part2)
 - [ ] Part 3 - Programming a server with NodeJS and Express
 - [ ] Part 4 - Testing Express servers, user administration
 - [ ] Part 5 - Testing React apps

@@ -12,8 +12,10 @@ Notes, examples and exercises from the first seven parts of the [Full Stack open
 - [x] [Part 0 - Fundamentals of Web apps](./part0)
 - [x] [Part 1 - Introduction to React](./part1)
 - [x] [Part 2 - Communicating with server](./part2)
-- [ ] Part 3 - Programming a server with NodeJS and Express
+- [ ] [Part 3 - Programming a server with NodeJS and Express](./part3)
 - [ ] Part 4 - Testing Express servers, user administration
 - [ ] Part 5 - Testing React apps
 - [ ] Part 6 - Advanced state management
 - [ ] Part 7 - React router, custom hooks, styling app with CSS and webpack
+
+**_NB:_** The exercises for part 3 are in a separate repository [here](https://github.com/lmisea/fullstack-phonebook).

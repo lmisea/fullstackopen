@@ -8,5 +8,6 @@
     "phonebook",
     "Poppendieck",
     "unicafe"
-  ]
+  ],
+  "cmake.configureOnOpen": false
 }

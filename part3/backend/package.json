@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "notes-backend",
   "version": "0.0.1",
   "description": "Backend app given in the part3 of the Full Stack Open course",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "author": "Luis Isea",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2"
   },
   "devDependencies": {

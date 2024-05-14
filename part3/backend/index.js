@@ -1,7 +1,8 @@
 const express = require('express')
+const cors = require('cors')
 
 const app = express()
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 
 let notes = [
   {
@@ -38,6 +39,7 @@ const requestLogger = (request, response, next) => {
 // Middleware
 app.use(express.json()) // Parse the request body as JSON
 app.use(requestLogger)
+app.use(cors()) // Allow requests from cross-origin
 
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })

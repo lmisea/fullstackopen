@@ -40,15 +40,11 @@ const requestLogger = (request, response, next) => {
 app.use(express.json()) // Parse the request body as JSON
 app.use(requestLogger)
 app.use(cors()) // Allow requests from cross-origin
+app.use(express.static('dist')) // Serve static files from the dist directory
 
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
 }
-
-// Root route
-app.get('/', (request, response) => {
-  response.send('<h1>Hello World!</h1>')
-})
 
 // Fetch all notes
 app.get('/api/notes', (request, response) => {
